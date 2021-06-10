@@ -11,11 +11,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('portal');
-});
-
-
 // akses root ke hal PORTAL
 Route::get("portal", function () {
     return view('portal');
@@ -54,3 +49,6 @@ Route::get("dashboard/{id}", [siswacontroller::class, 'show']);
 
 Route::put('edit-data/{id}', [siswacontroller::class, 'Edit_data']);
 // akses root untuk fungsi show di hal dashboard_Edit
+
+Route::delete('dashboard/{id}', [siswacontroller::class, 'Hapus']);
+// akses root untuk fungsi hapus di hal dashboard

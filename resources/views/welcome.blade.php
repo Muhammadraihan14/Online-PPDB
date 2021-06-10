@@ -72,7 +72,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-brand">
     <a href="#"> <img src= {{asset ('image/facebook.png')}} width="30"></a>
     <a href="https://www.instagram.com/pensi_smansaka/"> <img src={{asset ('image/instagram.png')}} width="30"></a>
@@ -82,7 +82,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#Beranda">Beranda</a>
         </li>

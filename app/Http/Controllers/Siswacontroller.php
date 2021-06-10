@@ -43,5 +43,18 @@ public function Edit_data($id, Request $request) {
     }
 
 // fungsi edit data adalah fungsi untuk mengubah data lama, yang diubah admin, setelah itu di save, dan ditampilkan di tabel yang ada halaman dashboard
+
+
+    public function Hapus($id) {
+        $siswa = Siswa::find($id);
+        $siswa->delete();
+
+        return back();
+
+    }
+// fungsi Hapus adalah fungsi untuk menghapus data.
+
+
+
 }
 

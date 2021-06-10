@@ -42,9 +42,17 @@
   <!-- endnavbar -->
 
 
-    @yield('content')
+   
  
+<div class="row">
+  <div class="col-2">
+    @yield('content1')
+  </div>
 
+  <div class="col-10">
+    @yield('content2')
+  </div>
+</div>
 
 
 
